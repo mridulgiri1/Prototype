@@ -16,106 +16,137 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar">
-      <div class="navbar-logo">SMART dev</div>
+      <div class="navbar-logo"><a href="index.html">Smart Dev</a></div>
+
+      <div id="nav-search-sections">
+        <label id="nav-search-icon"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></label>
+        <input id="nav-search-input" type="text" placeholder="Search" />
+      </div>
+
       <ul class="navbar-menu">
-        <li class="navbar-item"><i class="fa-regular fa-comment"></i></li>
         <li class="navbar-item">
           <i class="fa-regular fa-bell"></i>
         </li>
-        <li class="navbar-item"><i class="fa-regular fa-user"></i></li>
+        <li
+          class="navbar-item"
+          style="border: 1px solid #e1e1e1; border-radius: 5px"
+        >
+          Login/Sign up &nbsp; &nbsp;<i class="fa-regular fa-user"></i>
+        </li>
       </ul>
     </nav>
 
-    <div id="discover-section">
-      <div class="brand-name">
-        <h1 style="color: white">Alumni Association Platform</h1>
-      </div>
-
-      <div id="search-sections">
-        <label id="search-icon"
-          ><i class="fa-solid fa-magnifying-glass"></i
-        ></label>
-        <input id="search-input" type="text" placeholder="Discover Colleges" />
-      </div>
+    <!-- portal-->
+    <div id="portals">
+      <ul class="portal-list">
+        <li>
+          <a href="index.html" style="color: #e1e1e1; text-decoration: none"
+            >Feed</a
+          >
+        </li>
+        <li>
+          <a href="college.html" style="color: #e1e1e1; text-decoration: none"
+            >Discover College</a
+          >
+        </li>
+        <li>Donation</li>
+        <li>Jobs/Internship</li>
+      </ul>
     </div>
 
-    <div id="college-section">
-      <div class="clg">
-        <img src="img1.jpg" />
-        <h3>College 1</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 6k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
+    <!-- feed-section -->
+    <div id="feed-section">
+      <div class="feed">
+        <input class="post-input" type="text" placeholder="Write something" />
+        <br />
+        <br />
+
+        <!-- posts -->
+        <div class="posts">
+          <div class="post">
+            <h3>Profile 1</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloribus, eum atque omnis illo exercitationem at fugiat deleniti
+              placeat sunt libero voluptas error molestiae eligendi consectetur
+              ducimus? Odio officiis a distinctio.
+            </p>
+            <span><b>Like</b></span> &nbsp; <span><b>Comment</b></span> &nbsp;
+            <span><b>Share</b></span>
+          </div>
+          <br />
+          <div class="post">
+            <h3>Profile 2</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam,
+              commodi dolorum officia hic quas dolores omnis voluptatem
+              voluptatum id est<br /><br />
+              <span><img src="post1.jpg" /></span> #fun #collegeLife
+            </p>
+
+            <span><b>Like</b></span> &nbsp; <span><b>Comment</b></span> &nbsp;
+            <span><b>Share</b></span>
+          </div>
+          <br />
+
+          <div class="post">
+            <h3>Profile 3</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloribus, eum atque omnis illo exercitationem at fugiat deleniti
+              placeat sunt libero voluptas error molestiae eligendi consectetur
+              ducimus? Odio officiis a distinctio.
+            </p>
+            <span><b>Like</b></span> &nbsp; <span><b>Comment</b></span> &nbsp;
+            <span><b>Share</b></span>
+          </div>
+          <br />
+
+          <div class="post">
+            <h3>Profile 4</h3>
+            <p>Last night celebration!</p>
+            <img src="post2.jpg" />
+            <br />
+            <br />
+
+            <span><b>Like</b></span> &nbsp; <span><b>Comment</b></span> &nbsp;
+            <span><b>Share</b></span>
+          </div>
+        </div>
       </div>
 
-      <div class="clg">
-        <img src="img2.jpg" />
-        <h3>College 2</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 13k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
-      </div>
-
-      <div class="clg">
-        <img src="img3.jpg" />
-        <h3>College 3</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 20k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
-      </div>
-
-      <div class="clg">
-        <img src="img4.jpg" />
-        <h3>College 4</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 1k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
-      </div>
-
-      <div class="clg">
-        <img src="img5.jpg" />
-        <h3>College 5</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 10k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
-      </div>
-
-      <div class="clg">
-        <img src="img6.jpg" />
-        <h3>College 6</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          saepe hic ullam esse...
-        </p>
-        <span>&#x2022; Private</span> &nbsp;
-        <span>&#x2022; 15k Members</span>&nbsp;
-        <span>&#x2022; Private</span>
+      <div class="show-profile">
+        <div class="profile">
+          <img src="user.png" />
+          <h3 style="margin: 5px">User 1</h3>
+          <h4 style="margin: 5px">College Name</h4>
+          <p style="margin: 5px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+            assumenda sapiente magni.
+          </p>
+        </div>
+        <div class="leaderboard">
+          <h3><u>Leaderboard(30-day)</u></h3>
+          <p>
+            -- User 1&nbsp; <span><b>(+1025)</b></span>
+          </p>
+          <p>
+            -- User 2&nbsp; <span><b>(+925)</b></span>
+          </p>
+          <p>
+            -- User 3&nbsp; <span><b>(+855)</b></span>
+          </p>
+          <button>See all leaderboards</button>
+        </div>
       </div>
     </div>
 
@@ -126,7 +157,7 @@
           outline the registration procedure to assist you. We hope this guide
           proves helpful from now on.
         </p>
-        <h1>SMART dev</h1>
+        <h1>Smart Dev</h1>
       </div>
     </footer>
   </body>
